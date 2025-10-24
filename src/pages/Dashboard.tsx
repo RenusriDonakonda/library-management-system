@@ -171,7 +171,7 @@ const Dashboard = () => {
           </Card>
         </div>
 
-        {/* Borrowings List */}
+      {/* Borrowings List */}
         <div>
           <h2 className="text-2xl font-bold mb-4">Your Books</h2>
           {borrowings.length === 0 ? (
@@ -187,13 +187,13 @@ const Dashboard = () => {
             <div className="grid gap-4">
               {borrowings.map((borrowing) => (
                 <Card key={borrowing.id} className="p-4 shadow-elevation-2">
-                  <div className="flex gap-4">
+                 <div className="flex gap-4">
                     <img
                       src={borrowing.books.cover_image || "/placeholder.svg"}
                       alt={borrowing.books.title}
                       className="w-20 h-28 object-cover rounded"
-                    />
-                    <div className="flex-1">
+                      />
+                      <div className="flex-1">
                       <div className="flex items-start justify-between mb-2">
                         <div>
                           <h3 className="font-semibold text-lg">
